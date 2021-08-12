@@ -89,6 +89,7 @@ typedef struct {
     bool                requestTelemetry;
 } pwmOutputMotor_t;
 
+//static pwmOutputPort_t pwmOutputPorts[MAX_PWM_OUTPUT_PORTS];
 static DMA_RAM pwmOutputPort_t pwmOutputPorts[MAX_PWM_OUTPUT_PORTS];
 
 static pwmOutputMotor_t        motors[MAX_MOTORS];
