@@ -39,7 +39,6 @@
 #define I2C2_OVERCLOCK false
 #define USE_I2C_PULLUP          // Enable built-in pullups on all boards in case external ones are too week
 
-#define USE_RX_PPM
 #define USE_SERIAL_RX
 #define USE_SERIALRX_SPEKTRUM   // Cheap and fairly common protocol
 #define USE_SERIALRX_SBUS       // Very common protocol
@@ -80,7 +79,7 @@
 
 #if (MCU_FLASH_SIZE > 256)
 
-#if defined(MAG_I2C_BUS) || defined(VCM5883_I2C_BUS)    
+#if defined(MAG_I2C_BUS) || defined(VCM5883_I2C_BUS)
 #define USE_MAG_VCM5883
 #endif
 
@@ -191,7 +190,7 @@
 //#define USE_MSP_RC_OVERRIDE
 #define USE_SERIALRX_CRSF
 #define USE_SERIAL_PASSTHROUGH
-#define NAV_MAX_WAYPOINTS       60
+#define NAV_MAX_WAYPOINTS       120
 #define USE_RCDEVICE
 
 //Enable VTX control
